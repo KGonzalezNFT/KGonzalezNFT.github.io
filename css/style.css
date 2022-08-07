@@ -195,12 +195,6 @@ section .title[data-scroll="in"] {
     margin: 0px;
 }
 
-@media (max-width: 360px) {
-    .nav-bottom {
-        width: 320px;
-    }
-}
-
 .whatsapp-button {
     position: fixed;
     width: 40px;
@@ -272,6 +266,7 @@ section .title[data-scroll="in"] {
 .popup-whatsapp .content-whatsapp.-top p {
     text-align: center;
     color: var(--text);
+    margin-top: 20px;
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 14px;
@@ -301,7 +296,8 @@ section .title[data-scroll="in"] {
 
 .send-msPopup {
     position: absolute;
-    left: 25%;
+    left: 29%;
+    bottom: 25px;
     color: var(--white);
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
@@ -1059,14 +1055,13 @@ section .title[data-scroll="in"] {
 .projects .filter-buttons ul li {
     position: relative;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 19px;
     margin: 0 8px;
     text-transform: uppercase;
     cursor: pointer;
     transition: 0.4s;
-    line-height: 1em;
+    line-height: 13px;
     letter-spacing: 2px;
-    text-transform: uppercase;
     color: transparent;
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
 }
@@ -1183,7 +1178,6 @@ section .title[data-scroll="in"] {
 
 .projects .projects-gallery .item:hover {
     box-shadow: 0 0 25px rgba(0, 0, 0, 1);
-    transform: scale(1.03);
 }
 
 .projects .projects-gallery .item .content-bx {
@@ -1231,6 +1225,7 @@ section .title[data-scroll="in"] {
 
 .projects .projects-gallery .item img {
     width: 100%;
+    height: 100%;
     display: block;
     border-radius: 10px;
     transition: 0.4s;
@@ -1315,6 +1310,9 @@ section .title[data-scroll="in"] {
     color: var(--text);
     opacity: 0.4;
 }
+
+
+/* Colum right */
 
 .contact .right {
     opacity: 0;
@@ -1678,7 +1676,7 @@ footer p a:hover {
         margin: 10px;
     }
     .about .about-card:hover {
-        height: 700px;
+        height: 800px;
     }
     .about .about-card .about-content {
         width: 100%;
@@ -1686,7 +1684,7 @@ footer p a:hover {
         padding: 25px;
     }
     .about .about-card:hover img {
-        top: 75%;
+        top: 80%;
         left: 50%;
         height: 380px;
     }
@@ -1722,7 +1720,7 @@ footer p a:hover {
     }
     .projects .projects-gallery .item {
         flex: 0 0 100%;
-        max-width: 80%;
+        max-width: 60%;
     }
     .contact .contact-content .column {
         width: 90%;
@@ -1768,10 +1766,74 @@ footer p a:hover {
     .about .about-card .about-content {
         padding: 20px;
     }
+    .projects .projects-gallery .item {
+        flex: 0 0 100%;
+        max-width: 280px;
+    }
+    .projects .projects-gallery .item .content-bx .content h3 {
+        font-size: 15px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    .footer-list li {
+        padding: 9px;
+        font-size: 17px;
+    }
 }
 
 @media (max-width: 420px) {
-    input.whats-input[type=text] {
-        width: 225px;
+    .home .home-content .text-1 {
+        font-size: 20px;
+    }
+    .home .home-content .text-1 span {
+        font-size: 19px;
+    }
+    .home .home-content .text-2 {
+        font-size: 67px;
+    }
+    .about .about-card {
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start;
+        margin: 10px;
+    }
+    .about .about-card:hover {
+        height: 857px;
+    }
+    .about .about-card .about-content {
+        width: 100%;
+        left: 0;
+        padding: 25px;
+    }
+    .about .about-card:hover img {
+        top: 80%;
+        left: 50%;
+        height: 350px;
+    }
+    .about .about-card .about-content a {
+        margin-top: 15px;
+        margin-left: 30%;
+    }
+    .skills .title::after {
+        font-size: 16px;
+    }
+    .projects .filter-buttons ul li {
+        font-size: 13px;
+        margin: 0 5px;
+        line-height: 15px;
+    }
+    .contact .contact-content .row .socials a i {
+        transition: .3s ease-in;
+        padding: 10px;
+    }
+    .footer-list li {
+        padding: 5px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 350px) {
+    .about .about-card:hover img {
+        top: 83%;
     }
 }
